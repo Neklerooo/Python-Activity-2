@@ -1,0 +1,9 @@
+small_containers = int(input("Enter the number of containers (1 liter or less): "))
+large_containers = int(input("Enter the number of containers (more than 1 liter): "))
+
+small_deposit = 0.10
+large_deposit = 0.25
+
+refund = (small_containers * small_deposit) + (large_containers * large_deposit)
+
+print("Refund: ${:.2f}".format(refund))
